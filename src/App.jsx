@@ -1,5 +1,4 @@
-import {RouterProvider } from "react-router-dom";
-import { Header } from "./components";
+import { Footer, Header } from "./components";
 import HomePage from "./pages/HomePage";
 
 
@@ -7,7 +6,8 @@ function App() {
 
   return <>
     <Header/>
-    <HomePage/>
+      <HomePage/>
+    <Footer/>
   </>
 }
 

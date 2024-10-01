@@ -19,7 +19,7 @@ const Input = forwardRef(
       <div>
         <input
           ref={ref}
-          className={`border px-2 py-1 focus:outline-none focus:ring ${className} ${shape && shape} ${size && size}`}
+          className={`border p-2 rounded focus:outline-none focus:ring ${className} ${shape && shape} ${size && size}`}
           type={type}
           placeholder={placeholder}
           disabled={disabled}
