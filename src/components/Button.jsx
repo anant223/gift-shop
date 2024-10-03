@@ -13,7 +13,7 @@ const Button = ({
   }) => {
   return (
       <button
-        className={`${className} text-center flex items-center cursor-pointer justify-center ${
+        className={`${className} text-center flex items-center cursor-pointer p-[6px] justify-center ${
           size && size
         } ${shape && shape} ${color && color} `}
         {...props}

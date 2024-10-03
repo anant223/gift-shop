@@ -1,5 +1,6 @@
 import React from 'react'
 import {ChevronRight, Star} from "lucide-react";
+import Button from '../Button';
 
 const FeaturedCard = ({image, title, description, price, type ="btn", ratting}) => {
   
@@ -34,14 +35,12 @@ const FeaturedCard = ({image, title, description, price, type ="btn", ratting}) 
         )}
         <div className="flex items-center justify-between mt-4">
           {price && (
-            <span className="text-green-600 font-semibold text-lg">
+            <span className="text-red-900 font-semibold text-lg">
               ${price}
             </span>
           )}
           {type === "btn" ? (
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-400/50 transition-all duration-300">
-              Add to Cart
-            </button>
+            <Button children="Add to Cart" color="text-white" className="bg-red-500 rounded"/>
           ) : (
             <a className="flex items-center">
               Explore
