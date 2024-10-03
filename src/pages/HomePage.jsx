@@ -98,7 +98,7 @@ const product = {
           <h2 className="text-3xl font-bold mb-8 text-center">
             Featured Gifts
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-fit mx-auto lg:px-[90px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-fit mx-auto">
             <FeaturedCard
               image={product.image}
               price={product.price}
@@ -176,7 +176,7 @@ const product = {
         </div>
       </section>
       <section className="py-16">
-        <Container>
+        <Container className="lg:px-[80px] sm:px-[60px]">
           <div className="min-h-[80vh] flex justify-center items-center bg-gray-900 p-2">
             <div className="text-center">
               {/* Title Section */}
@@ -231,10 +231,13 @@ const product = {
                 placeholder="Enter your email"
                 size="p-2 w-[440px]"
                 type="email"
-                
               />
-              <Button children="Subscribe" color="bg-red-400 text-white" size="p-2" shape="rounded" />
-
+              <Button
+                children="Subscribe"
+                color="bg-red-400 text-white"
+                size="p-2"
+                shape="rounded"
+              />
             </div>
           </div>
         </Container>

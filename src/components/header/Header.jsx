@@ -18,7 +18,7 @@ const Header = () => {
         <div className="py-4 flex items-center justify-between text-red-900">
           <Logo />
           <nav className="p-2">
-            <ul className="hidden md:flex space-x-4 font-medium ">
+            <ul className="hidden md:flex space-x-4 font-medium lg:text-lg sm:text-base">
               <li>
                 {" "}
                 <a href="#" className="hover:text-red-400 hover:underline">
