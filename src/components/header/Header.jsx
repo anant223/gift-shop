@@ -13,12 +13,12 @@ import { useState } from "react";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-20 bg-[0_0%_100%] border-b bg-white lg:px-[60px]  shadow-lg">
+    <header className="sticky top-0 z-20 bg-[0_0%_100%] border-b bg-white shadow-lg">
       <Container>
         <div className="py-4 flex items-center justify-between text-red-900">
           <Logo />
-          <nav className="p-2">
-            <ul className="hidden md:flex space-x-4 font-medium lg:text-lg sm:text-base">
+          <nav className="">
+            <ul className="hidden md:flex space-x-4 font-semibold lg:text-lg text-base">
               <li>
                 {" "}
                 <a href="#" className="hover:text-red-400 hover:underline">
@@ -49,20 +49,25 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="flex items-center space-x-4 p-2">
+          <div className="flex items-center space-x-4">
             <Button
-              shape="medium"
-              leftIcon={<Search className="h-5 w-5" />}
+              leftIcon={
+                <Search className="lg:h-8 lg:w-8 w-6 h-6 md:w-7 md:h-7" />
+              }
             >
               <span className="sr-only">Search</span>
             </Button>
             <Button
-              leftIcon={<ShoppingBag className="h-5 w-5 text-red-500" />}
+              leftIcon={
+                <ShoppingBag className="lg:h-8 lg:w-8 w-6 h-6 md:w-7 md:h-7 text-red-500" />
+              }
             >
               <span className="sr-only">Cart</span>
             </Button>
             <Button
-              leftIcon={<User className="h-5 w-5 text-red-500" />}
+              leftIcon={
+                <User className="lg:h-8 lg:w-8 w-6 h-6 md:w-7 md:h-7 text-red-500" />
+              }
             >
               <span className="sr-only">Login</span>
             </Button>

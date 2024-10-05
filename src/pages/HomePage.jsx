@@ -76,15 +76,15 @@ const product = {
         </div>
         <div className="absolute inset-0 bg-red-400 bg-opacity-35 flex items-center justify-center z-10">
           <div className="text-center space-y-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-lg md:text-3xl lg:text-5xl font-bold text-white mb-4">
               Find the Perfect Gift
             </h2>
-            <p className="text-xl text-white mb-8">
+            <p className="text-sm md:text-base lg:text-lg text-white leading-snug md:leading-normal lg:leading-relaxed max-w-md">
               Discover unique presents for every occasion
             </p>
             <div className=" flex items-center justify-center">
               <Button
-                className="text-white p-2"
+                className="text-white font-semibold py-2 px-4 md:py-3 md:px-6 lg:py-4 lg:px-8 text-sm md:text-base lg:text-lg"
                 children="Shop Now"
                 color="bg-red-500"
                 shape="rounded"
@@ -95,7 +95,7 @@ const product = {
       </section>
       <section className="py-16 w-full text-red-900">
         <Container>
-          <h2 className="text-3xl font-bold mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-center">
             Featured Gifts
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-fit mx-auto">
@@ -103,28 +103,32 @@ const product = {
               image={product.image}
               price={product.price}
               description={product.description}
+              title="Cake"
             />
             <FeaturedCard
               image={product.image}
               price={product.price}
               description={product.description}
+              title="Cake"
             />
             <FeaturedCard
               image={product.image}
               price={product.price}
               description={product.description}
+              title="Cake"
             />
             <FeaturedCard
               image={product.image}
               price={product.price}
               description={product.description}
+              title="Cake"
             />
           </div>
         </Container>
       </section>
       <section className="bg-red-50 py-16">
         <Container>
-          <h2 className="text-3xl text-red-400 font-bold mb-8 text-center">
+          <h2 className="text-red-400 font-bold mb-8 text-center text-2xl md:text-3xl lg:text-4xl">
             Shop by Occasion
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-fit mx-auto">
@@ -153,7 +157,7 @@ const product = {
       </section>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">
+          <h2 className="text-red-400 font-bold mb-8 text-center text-2xl md:text-3xl lg:text-4xl">
             Customer Satisfaction
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-center w-full">
@@ -176,7 +180,7 @@ const product = {
         </div>
       </section>
       <section className="py-16">
-        <Container className="lg:px-[80px] sm:px-[60px]">
+        <Container>
           <div className="min-h-[80vh] flex justify-center items-center bg-gray-900 p-2">
             <div className="text-center">
               {/* Title Section */}
